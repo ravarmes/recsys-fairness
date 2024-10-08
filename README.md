@@ -1,7 +1,3 @@
-<h1 align="center">
-    <img alt="RVM" src="https://github.com/ravarmes/recsys-fairness/blob/main/assets/logo.jpg" />
-</h1>
-
 <h3 align="center">
   Developing a fairness strategy for recommendation systems
 </h3>
@@ -20,11 +16,6 @@ The results demonstrated the effectiveness of the fairness algorithm in substant
 * Individual fairness: For each user \(i\), we define \(ℓ_i\), the loss of user \(i\), as the mean squared error of the estimate over the known ratings of user \(i\):
 
 * Group fairness: Let \(I\) be the set of all users/items and \(G = \{G_1, ..., G_{g}\}\) a partition of users/items into \(g\) groups, i.e., \(I = \cup_{i \in \{1, ..., g\}} G_i\). We define the loss of group \(i\) as the mean squared error of the estimate over all known ratings in group \(i\):
-
-
-### :notebook_with_decorative_cover: Algorithm <a name="-algorithm"/></a>
-
-<img src="https://github.com/ravarmes/recsys-fairness/blob/main/assets/recsys-fairness-1.png" width="700">
 
 
 ### Files
