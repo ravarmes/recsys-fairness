@@ -14,8 +14,8 @@ dataset = 'MovieLens-1M'    # reading data from 3883 movies and 6040 users
 # dataset = 'Songs'         # reading data from 19993 songs and 16000 users
 
 # recommendation algorithm
-# algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
-algorithm = 'RecSysNCF' # Neural Collaborative Filtering
+algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
+# algorithm = 'RecSysNCF' # Neural Collaborative Filtering
 
 # estimated number of matrices (h)
 h = 3

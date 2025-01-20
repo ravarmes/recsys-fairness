@@ -79,8 +79,8 @@ class RecSys():
     def  compute_X_est(self, X, algorithm='RecSysALS', data_dir="Data/MovieLens-Small"):
         if(algorithm == 'RecSysALS'):
             # factorization parameters
-            rank = 8 # before 20
-            lambda_ = 1 # before 20 - ridge regularizer parameter
+            rank = 20 # before 20
+            lambda_ = 20 # before 20 - ridge regularizer parameter
             # initiate a recommender system of type ALS (Alternating Least Squares)
             RS = RecSysALS.als_RecSysALS(rank,lambda_)
             X_est, error = RS.fit_model(X)
