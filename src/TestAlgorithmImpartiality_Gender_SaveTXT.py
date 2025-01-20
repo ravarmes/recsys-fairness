@@ -24,13 +24,8 @@ dataset = 'MovieLens-1M'    # reading data from 3883 movies and 6040 users
 
 # recommendation algorithm
 # algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
-# algorithm = 'RecSysKNN' # K-Nearest Neighbors for Recommender Systems
-# algorithm = 'RecSysNMF' # Non-Negative Matrix Factorization for Recommender Systems
-# algorithm = 'RecSysSGD' # Stochastic Gradient Descent for Recommender Systems
-# algorithm = 'RecSysSVD' # Singular Value Decomposition for Recommender Systems
 # algorithm = 'RecSysNCF' # Neural Collaborative Filtering
-# algorithms = ['RecSysALS', 'RecSysKNN', 'RecSysNMF', 'RecSysSGD', 'RecSysNCF']
-algorithms = ['RecSysALS', 'RecSysKNN', 'RecSysNMF', 'RecSysNCF']
+algorithms = ['RecSysALS', 'RecSysNCF']
 
 for algorithm in algorithms:
 
@@ -40,7 +35,7 @@ for algorithm in algorithms:
     file.write(f'Algorithm: {algorithm}\n')
 
     # estimated number of matrices (h)
-    # h = 3
+    h = 3
     # h = 5
     # h = 10
     # h = 15

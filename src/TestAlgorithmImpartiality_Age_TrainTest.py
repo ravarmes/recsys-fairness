@@ -54,10 +54,6 @@ def split_train_test(X, test_size=0.2):
 experiment_results = []
 
 # user and item filtering
-# n_users=  300
-# n_items= 1000
-# n_users=  4
-# n_items= 6
 n_users=  300
 n_items= 1000
 top_users = True # True: to use users with more ratings; False: otherwise
@@ -72,24 +68,11 @@ datasets = ['MovieLens-1M']
 
 # recommendation algorithm
 # algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
-# algorithm = 'RecSysKNN' # K-Nearest Neighbors for Recommender Systems
-# algorithm = 'RecSysNMF' # Non-Negative Matrix Factorization for Recommender Systems
-# algorithm = 'RecSysSGD' # Stochastic Gradient Descent for Recommender Systems
-# algorithm = 'RecSysSVD' # Singular Value Decomposition for Recommender Systems
 # algorithm = 'RecSysNCF' # Neural Collaborative Filtering
 algorithms = ['RecSysALS', 'RecSysNCF']
-# algorithms = ['RecSysNCF']
 
 # estimated number of matrices (h)
-# h = 3
-# h = 5
-# h = 10
-# h = 15
-# h = 20
-# hs = [3, 5, 10, 15, 20, 23]
-# hs = [15, 20, 23]
-# hs = [23]
-hs = [3, 5, 10]
+hs = [3, 5, 10, 15, 20]
 
 
 iteration = [1, 2, 3]

@@ -1,0 +1,7 @@
+# Ignorar pastas de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar pasta do ambiente virtual
+myenv/

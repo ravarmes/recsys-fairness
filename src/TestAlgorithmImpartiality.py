@@ -111,18 +111,13 @@ datasets = ['MovieLens-1M']
 
 # recommendation algorithm
 # algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
-# algorithm = 'RecSysKNN' # K-Nearest Neighbors for Recommender Systems
-# algorithm = 'RecSysNMF' # Non-Negative Matrix Factorization for Recommender Systems
-# algorithm = 'RecSysSGD' # Stochastic Gradient Descent for Recommender Systems
-# algorithm = 'RecSysSVD' # Singular Value Decomposition for Recommender Systems
 # algorithm = 'RecSysNCF' # Neural Collaborative Filtering
-algorithms = ['RecSysALS']
+algorithms = ['RecSysALS', 'RecSysNCF']
 
-# clusters = ['Activity', 'Gender', 'Age']
-clusters = ['Gender']
+clusters = ['Activity', 'Gender', 'Age']
 
 # estimated number of matrices (h)
-hs = [3, 5, 10, 15, 20, 23]
+hs = [3, 5, 10, 15, 20]
 
 iteration = [1, 2, 3]
 

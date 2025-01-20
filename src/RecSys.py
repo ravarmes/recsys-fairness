@@ -1,13 +1,14 @@
 import pandas as pd
 import RecSysALS
+import RecSysNCF
 
 class RecSys():
         
     def __init__(self, n_users, n_items, top_users, top_items, l=5, theta=3, k=3):
         self.n_users = n_users
-        self.n_movies = n_items
+        self.n_items = n_items
         self.top_users = top_users
-        self.top_movies = top_items
+        self.top_items = top_items
         self.l = l
         self.theta = theta
         self.k = k
@@ -83,6 +84,9 @@ class RecSys():
             # initiate a recommender system of type ALS (Alternating Least Squares)
             RS = RecSysALS.als_RecSysALS(rank,lambda_)
             X_est, error = RS.fit_model(X)
+        elif(algorithm == 'RecSysNCF'):
+            RS = RecSysNCF.RecSysNCF(n_users=self.n_users, n_items=self.n_items, n_factors=20, ratings=X)
+            X_est, error = RS.fit_model()
         else:
             RecSysALS
         return X_est  

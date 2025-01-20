@@ -12,17 +12,13 @@ top_items = True # True: to use MovieLens with more ratings; False: otherwise
 dataset = 'MovieLens-1M'    # reading data from 3883 movies and 6040 users
 
 # recommendation algorithm
-algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
-# algorithm = 'RecSysKNN' # K-Nearest Neighbors for Recommender Systems
-# algorithm = 'RecSysNMF' # Non-Negative Matrix Factorization for Recommender Systems
-# algorithm = 'RecSysSGD' # Stochastic Gradient Descent for Recommender Systems
-# algorithm = 'RecSysSVD' # Singular Value Decomposition for Recommender Systems
-# algorithm = 'RecSysNCF' # Neural Collaborative Filtering
+# algorithm = 'RecSysALS' # Alternating Least Squares (ALS) for Collaborative Filtering
+algorithm = 'RecSysNCF' # Neural Collaborative Filtering
 
 # estimated number of matrices (h)
-# h = 3
+h = 3
 # h = 5
-h = 10
+# h = 10
 # h = 15
 # h = 20
 
